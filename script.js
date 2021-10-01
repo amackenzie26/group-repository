@@ -22,7 +22,7 @@ function searchRequest(event) {
     fetch(apiURL).then(function(response) {
         if (response.ok){
             response.json().then(function(data) {
-                console.log(data);
+                console.log(data.results);
             })
         }
     });
